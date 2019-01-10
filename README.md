@@ -32,7 +32,7 @@ You can check that the change was successful by looking at your remote list.
 
 Get the code
 
-    git clone https://github.com/AgeasWebDevTeam/ageasTechTestStarter.git
+    git clone https://github.com/AgeasWebDevTeam/ageasReactTestJunior.git
 
 Install the node dependencies
 
