@@ -1,34 +1,98 @@
-// This code is simply here to produce the initial bundle seen when the you began the project, feel free to delete this.
 body {
+  background-color: #89cff0;
   margin: 0;
-  padding: 0;
-  background-color: #fafafa;
-  color: #2d2d2d;
-}
-
-h1 {
-  color: #7a49d3;
-  font-size: 40px;
-  letter-spacing: .5px;
-  font-weight: 400;
-}
-
-p {
-  font-size: 1.5em;
-  font-weight: 400;
-}
-
-.app {
   width: 100%;
+}
+
+//APP
+.container {
+  margin-top: 8vh;
+  bottom: 0;
+  z-index: 1;
+}
+
+.fridge {
+  position: absolute;
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  bottom: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+//noteEditor
+.noteContainer {
+  top: 20vh;
+  position: relative;
+  z-index: 3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.noteCard {
+  background: #fff;
+  width: 100%;
+  max-width: 100%;
+  height: 70px !important;
+  outline: none;
+  resize: none;
+  display: block;
+  border: none;
+  padding: 15px 15px 50px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 4px rgba(0, 0, 0, 0.24);
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
   height: 100%;
-  overflow: hidden;
-  font-family: 'Roboto', sans-serif;
-  padding: 50px 100px;
+  outline: none;
+  resize: none;
+  display: block;
+  border: none;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 25px;
+  background-color: transparent;
+}
+
+button {
+  width: 100px;
+  background-color: #44c767;
+  border-radius: 50px;
+  border: 1px solid #18ab29;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 15px;
+}
+
+.note {
+  background: #f2e379;
+  width: calc(50% - 10px);
   box-sizing: border-box;
-  .container {
-    text-align: center;
-    background: #fff;
-    padding: 70px 10px;
-    box-shadow: 0 2px 3px rgba(0,0,0,.13);
-  }
+  padding: 15px;
+  margin: 0 10px 10px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.2s;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.noteDelete {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  cursor: pointer;
 }

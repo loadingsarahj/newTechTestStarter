@@ -46,6 +46,17 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(ttf|woff|eot|png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 1000000
+            }
+          }
+        ]
+      },
     ],
   },
   plugins: [
